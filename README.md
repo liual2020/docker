@@ -1,16 +1,16 @@
 # docker
 
-###什么是Docker？
+### 什么是Docker？
     Docker是一个开源的应用容器引擎，基于GO语言并总从Apache2.0协议开源   
     开发者可以打包应用以及依赖包到一个轻量级    
     可移植的容器中然后发布到任何流行的Linux机器上  
-###应用场景
+### 应用场景
     1). Web应用自动化打包和发布
     2). 自动化测试和持续集成、发布
     3). 在服务型环境中部署和调整数据库或其他的后台应用
     4). 从头编译或者扩展现有的 OpenShift 或 Cloud Foundry 平台来搭建自己的 PaaS 环境
     
-###优点
+### 优点
 开发、交付和运行应用程序的开放平台，将应用程序与基础架构分开，从而快速交付软件。  
 1. 快速，一致地交付您的应用程序  
     Docker 允许开发人员使用您提供的应用程序或服务的本地容器在标准化环境中工作，从而简化了开发的生命周期。  
@@ -21,9 +21,9 @@
 3. 在同一硬件上运行更多工作负载
     Docker 轻巧快速。它为基于虚拟机管理程序的虚拟机提供了可行、经济、高效的替代方案，因此您可以利用更多的计算能力来实现业务目标。  
     Docker 非常适合于高密度环境以及中小型部署，而您可以用更少的资源做更多的事情。  
-###CentOS Docker 安装
+### CentOS Docker 安装
     
-####1. 卸载旧版本
+#### 1. 卸载旧版本
 较旧的 Docker 版本称为 docker 或 docker-engine 。如果已安装这些程序，请卸载它们以及相关的依赖项。
     
     $ sudo yum remove docker \
@@ -34,7 +34,7 @@
                       docker-latest-logrotate \
                       docker-logrotate \
                       docker-engine
-####2. 设置Docker仓库
+#### 2. 设置Docker仓库
     $ sudo yum install -y yum-utils \
       device-mapper-persistent-data \
       lvm2
@@ -42,7 +42,7 @@
     $ sudo yum-config-manager \
           --add-repo \
           https://download.docker.com/linux/centos/docker-ce.repo
-####3. 安装 Docker Engine-Community
+#### 3. 安装 Docker Engine-Community
 安装最新版本的 Docker Engine-Community 和 containerd：  
 
     $ sudo yum install docker-ce docker-ce-cli containerd.io
